@@ -21,6 +21,7 @@ export class AppComponent {
   }
 
   load() {
+    
     // register the modules that we already loaded so that no HTTP request is made
     // in my case, the modules are already available in my bundle (bundled by webpack)
     SystemJS.set('@angular/core', SystemJS.newModule(AngularCore));
